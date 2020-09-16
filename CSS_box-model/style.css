@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    background-color: #424242;
+    padding: 0.5rem;
+}
+
+nav li {
+    /* cri flexbox */
+    display: inline;
+    padding: 5px 20px;
+}
+
+.carousel {
+    height: 200px;
+    background-color: #eeeeee;
+
+}
+
+section {
+    margin: 0 5px 35px;
+}
+
+.center-fix {
+    text-align: center;
+}
+
+section article {
+    /* je vous ai déjà parlé de la flexbox? */
+    display: inline-block;
+    background-color: #eeeeee;
+    margin: 0 1%;
+    /*fix pour rendre la hauteur des blocs vides responsive*/
+    padding-top: 40%;
+    width: 30%;
+}
+
+hr {
+    margin-top: 100px;
+}
+
+form input, form textarea {
+    display: block;
+    height: 1.5rem;
+    margin: 10px auto;
+    width: 50%;
+}
