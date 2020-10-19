@@ -3,40 +3,25 @@
     --conjonctive: #ff7f2a;
     --iris: #ffcc00;
     --pupille: #000;
-    --size: calc( 100vw / 12);
 }
 
-.container {
-    max-width: 100vw;
-
+.row {
+    height: 75px;
 }
 
 .body {
     background-color: var(--body);
-    height: var(--size);
-    width: var(--size);
 }
 
 .conjonctive {
     background-color: var(--conjonctive);
-    height: var(--size);
-    width: var(--size);
 }
 
 .iris {
     background-color: var(--iris);
-    height: var(--size);
-    width: var(--size);
-
 }
 
 .pupille {
     background-color: var(--pupille);
-    height: var(--size);
-    width: var(--size);
 }
 
-.empty {
-    height: var(--size);
-    width: var(--size);
-}
