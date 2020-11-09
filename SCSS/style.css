@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100vh;
+  background-color: #efede4;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #ff5f01;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header li a {
+  padding: 0 5px;
+  border-right: #fff solid 1px;
+}
+
+header li a.active {
+  text-decoration: underline;
+}
+
+header li a.last {
+  border-right: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
+  font-size: 50px;
+}
+
+.container div > h2 {
+  margin: 0;
+}
+
+.container .m {
+  margin: 0 5px;
+}
+
+footer {
+  background-color: #ff5f01;
+  color: #fff;
+  padding: 1rem 2rem;
+  max-height: 6rem;
+}
+
+.ring1 {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: black solid 6px;
+  border-radius: 50%;
+  margin-left: -10px;
+}
+
+.ring2 {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: black solid 7px;
+  border-radius: 50%;
+  margin-left: -20px;
+}
+
+.ring3 {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: black solid 8px;
+  border-radius: 50%;
+  margin-left: -30px;
+}
+
+.ring4 {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border: black solid 9px;
+  border-radius: 50%;
+  margin-left: -40px;
+}
+
+.ring5 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: black solid 10px;
+  border-radius: 50%;
+  margin-left: -50px;
+}
+
+.ring6 {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border: black solid 11px;
+  border-radius: 50%;
+  margin-left: -60px;
+}
+
+.ring-orange {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: orange solid 5px;
+  border-radius: 50%;
+}
+
+.ring-gold {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: gold solid 10px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */

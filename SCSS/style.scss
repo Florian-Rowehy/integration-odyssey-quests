@@ -1,0 +1,102 @@
+$primary-color: #ff5f01;
+$secondary-color: #efede4;
+$font-color: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: $secondary-color;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  li a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+header {
+  background-color: $primary-color;
+  color: $font-color;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li a {
+    padding: 0 5px;
+    border-right: #fff solid 1px;
+    &.active {
+      text-decoration: underline;
+    }
+    &.last {
+      border-right: none;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    font-size: 50px;
+  }
+  div > h2 {
+    margin: 0;
+  }
+  .m {
+    margin: 0 5px;
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  color: $font-color;
+  padding: 1rem 2rem;
+  $height: 6rem;
+  max-height: $height;
+}
+
+@mixin ring($size, $color) {
+  display: inline-block;
+  width: $size;
+  height: $size;
+  border: $color solid $size/10;
+  border-radius: 50%;
+}
+
+@for $i from 1 through 6 {
+  .ring#{$i} {
+    $size: 50+$i*10px;
+    @include ring( $size, black);
+    margin-left: #{-10*$i}px;
+  }
+}
+
+.ring-orange {
+  @include ring(50px, orange);
+}
+
+.ring-gold {
+  @include ring(100px, gold);
+}
